@@ -29,6 +29,7 @@ curl --location --request POST 'http://localhost:8082/topics/predictions_kafka_t
 }'
 ```
 Go to http://localhost:8000/#/cluster/default/topic/n/predictions_kafka_topic, you should see the data you just produced on the topic.
+
 8. We can create the connector using connec-ui or just by running the following command:
 ```
 curl --location --request POST 'http://localhost:8083/connectors' \
