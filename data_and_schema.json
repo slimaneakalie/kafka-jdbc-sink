@@ -1,0 +1,14 @@
+{
+  "value_schema": "{\"type\":\"record\",\"name\":\"predictions_value_schema\",\"fields\":[{\"default\":null,\"name\":\"category\",\"type\":[\"null\",\"string\"]},{\"default\":null,\"name\":\"text\",\"type\":[\"null\",\"string\"]},{\"default\":null,\"name\":\"created_at\",\"type\":[\"null\",\"string\"]}]}",
+  "key_schema": "{\"name\":\"predictions_key_schema\",\"type\":\"long\"}",
+  "records": [
+    {
+      "key": 5,
+      "value": {
+        "category": { "string": "category example 5" },
+        "text": { "string": "text example 5" },
+        "created_at": { "string": "2016-06-26 22:15:29" }
+      }
+    }
+  ]
+}

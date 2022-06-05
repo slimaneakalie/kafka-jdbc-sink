@@ -1,0 +1,21 @@
+{
+    "name": "predictions_topic_sink_connector_536794",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "topics": "predictions_kafka_topic",
+    "tasks.max": 1,
+    "connection.url": "jdbc:postgresql://db:5432/predictions",
+    "connection.user": "user1",
+    "connection.password": "pass",
+    "insert.mode": "upsert",
+    "batch.size": 1000,
+    "delete.enabled": false,
+    "table.name.format": "predictions_table",
+    "pk.mode": "record_key",
+    "pk.fields": "id",
+    "transforms": "timestamp",
+    "transforms.timestamp.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.timestamp.target.type": "Timestamp",
+    "transforms.timestamp.field": "created_at",
+    "transforms.timestamp.format": "yyyy-MM-dd HH:mm:ss"
+  }
+  
